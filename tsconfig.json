@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "ES6",
+    "target": "ES2022",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ES2022"],
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node"
+  },
+  "exclude": ["node_modules"]
+}
