@@ -17,23 +17,19 @@
 */
 
 /* _____________ Your Code Here _____________ */
-import { Equal } from "@type-challenges/utils"
-
 // https://tc39.es/ecma262/#sec-white-space
 type EcmaWhitespaces = '\u0009' | '\u000B' | '\u000C' | '\uFEFF' | '\u0020' | '\u00A0' | '\u1680'
   | '\u2000' | '\u2001'| '\u2002'| '\u2003'| '\u2004'| '\u2005'| '\u2006'| '\u2007'| '\u2008'
   | '\u2009' | '\u200A' | '\u202F' | '\u205F' | '\u3000';
 // yes, ECMA-262 exclude the character from ones that are considered whitespaces.
 type NewLineLiteral = '\u000A';
-
 type MyWhitespaces = EcmaWhitespaces | NewLineLiteral;
-
 type TrimLeft<S extends string> = S extends `${MyWhitespaces}${infer restSubstring}`
   ? TrimLeft<restSubstring>
   : S;
 
 /* _____________ Test Cases _____________ */
-import type { Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '@type-challenges/utils'
 
 type cases = [
   Expect<Equal<TrimLeft<'str'>, 'str'>>,
