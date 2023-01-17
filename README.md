@@ -22,7 +22,7 @@ It is recommended that the latest stable version of TypeScript be installed as a
 
 Moreover, we need to configure TypeScript for the type challenges:
 
-```json
+```jsonc
 {
   "compilerOptions": {
     "module": "ES6",
