@@ -27,7 +27,7 @@ Moreover, we need to configure TypeScript for the type challenges:
   "compilerOptions": {
     "module": "ES6",
     "target": "ES2022",
-    "strict": true, // recommended
+    "strict": true, // **required**
     "forceConsistentCasingInFileNames": true,
     "lib": ["ES2022"],
     "noUnusedLocals": false,
