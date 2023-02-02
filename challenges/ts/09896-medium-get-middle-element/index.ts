@@ -23,7 +23,7 @@
 /* _____________ Your Code Here _____________ */
 
 type GetMiddleElement<
-  T extends any
+  T extends any[]
 > = T extends [any, infer Second, ...infer UntilSecondToLast, any]
   ? GetMiddleElement<[Second, ...UntilSecondToLast]>
   : T;
