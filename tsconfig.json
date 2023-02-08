@@ -4,7 +4,7 @@
     "target": "ES2022",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["ES2022"],
+    "lib": ["ES2022", "DOM"],
     "noUnusedLocals": false,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
