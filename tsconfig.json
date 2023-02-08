@@ -8,6 +8,7 @@
     "noUnusedLocals": false,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
+    "noImplicitThis": true,
     "moduleResolution": "node"
   },
   "exclude": ["node_modules"]
